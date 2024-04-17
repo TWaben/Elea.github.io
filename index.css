@@ -6,13 +6,10 @@ body {
 }
 
 .header {
-    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
-    top: 0; /* Aligne l'élément en haut de la fenêtre */
-    width: 100%; /* Définit la largeur de l'élément sur 100% de la fenêtre */
-    background-color: #d8ba83; /* Couleur de fond */
-    margin-top: 0; /* Ajustez cette valeur selon vos préférences */
-    text-align: center;
-    padding-top: 40px; /* Ajoute de l'espace entre le haut de la fenêtre et le titre */
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Ajout de rembourrage pour l'espace autour du contenu */
+    background-color: #e4c281;
 }
 
 .container {
