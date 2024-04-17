@@ -6,13 +6,49 @@ body {
     text-align: center;
     
 }
+
 .container {
-    margin: 0 auto; /* Centrer horizontalement */
-    max-width: 450px;
-    text-align: left; /* Alignement du texte à gauche */
+    display: flex;
+    justify-content: center;
     padding: 20px; /* Ajout de rembourrage pour l'espace autour du contenu */
     background-color: #e4c281;
 }
+
+.button-wrapper {
+    display: flex;
+    max-width: 450px;
+    padding: 20px;
+    text-align: center;
+}
+
+.button-wrapper button {
+    margin: 0 50% /* Ajoute une marge horizontale entre chaque bouton */
+    
+}
+
+.button-wrapper button:first-child {
+    margin-left: 50%;
+}
+
+/* Retirer la marge à droite du dernier bouton */
+.button-wrapper button:last-child {
+    margin-right: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permettre le passage à la ligne si nécessaire */
+    max-width: 450px;
+    margin: 0 auto; /* Centrer horizontalement */
+    padding: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+}
+
 .hidden {
     display: none;
 }

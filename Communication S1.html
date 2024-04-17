@@ -14,11 +14,16 @@
     <div> 
         <br>
         <br>
-        <p style="font-size: 16px;">L'enseignant demande à sa classe de former des petits groupes de travail afin d'effectuer une tâche, toutefois un enfant semble désintéressé, ne s'investit pas dans la classe et ne communique pas avec ses camarades.</p>
+        <div class="description">
+        <p style="font-size: 30px;">L'enfant a des difficulté en planification ...</p>
+        </div>
         <!-- Ajout des boutons -->
         <br>
-        <button onclick="laisserFaire()">Les laisser faire ce qu'il souhaite</button>
-        <button onclick="donnerTache()">Lui donner une tâche spécifique</button>
+        <div class="button-wrapper">
+            <button class="button" onclick="Pourquoi()">Pourquoi?</button>
+            <button class="button" onclick="Solution()">Solution?</button>
+            <button class="button" onclick="Savoir()">Bon à savoir</button>
+        </div>
 
         <!-- Emplacement pour afficher le résultat -->
         <div id="resultat"></div>

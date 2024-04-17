@@ -5,16 +5,30 @@ body {
     background-color: #d9ccb3; /* Définir la couleur de fond en beige */
 }
 
+.header {
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 0; /* Aligne l'élément en haut de la fenêtre */
+    width: 100%; /* Définit la largeur de l'élément sur 100% de la fenêtre */
+    background-color: #d8ba83; /* Couleur de fond */
+    margin-top: 0; /* Ajustez cette valeur selon vos préférences */
+    text-align: center;
+    padding-top: 40px; /* Ajoute de l'espace entre le haut de la fenêtre et le titre */
+}
 
 .container {
-    margin-left: 20px; /* Ajout de marge à gauche pour aligner le contenu */
-    text-align: center; /* Centrer le contenu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 nav ul li {
@@ -30,7 +44,7 @@ nav ul li a {
     max-width: 400px;
     overflow: hidden;
     white-space: nowrap;
-    margin-left: 400px;
+    
     
 }
 
