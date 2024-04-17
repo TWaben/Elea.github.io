@@ -10,14 +10,14 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    padding: 20px; /* Ajout de rembourrage pour l'espace autour du contenu */
+    padding: 1%; /* Ajout de rembourrage pour l'espace autour du contenu */
     background-color: #e4c281;
+    
 }
 
 .button-wrapper {
     display: flex;
     max-width: 450px;
-    padding: 20px;
     text-align: center;
 }
 
@@ -39,14 +39,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; /* Permettre le passage à la ligne si nécessaire */
-    max-width: 450px;
     margin: 0 auto; /* Centrer horizontalement */
-    padding: 20px;
 }
 
 button {
-    font-size: 20px;
-    padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+    font-size: 150%;
+    padding: 5% 10%; /* Espacement à l'intérieur du bouton */
 }
 
 .hidden {

@@ -18,7 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5%; /* Ajout de rembourrage pour l'espace autour du contenu */
+    padding: 10%; /* Ajout de rembourrage pour l'espace autour du contenu */
 }
 
 nav ul {
