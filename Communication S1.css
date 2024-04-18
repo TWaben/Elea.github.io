@@ -14,73 +14,72 @@ body {
     background-color: #e4c281;
     
 }
+.button-text /* premier texte sous le bouton */{
+    display: none; /* Texte caché initialement */
+    max-width: 100%; /* Définir la largeur maximale du texte */
+    margin: 0 auto; /* Centrer le texte horizontalement */
+    margin-left: 0%; /* Appliquer le même décalage que le bouton */
+    text-align: left;
+    margin-top: 3%;
+}
+.button-text2 /* deuxième texte sous le bouton 2 */{
+    display: none; /* Texte caché initialement */
+    max-width: 100%; /* Définir la largeur maximale du texte */
+    margin: 0 auto; /* Centrer le texte horizontalement */
+    margin-left: 0%; /* Appliquer le même décalage que le bouton */
+    text-align: left;
+    margin-top: 3%;
+}
+.button-text3 /* troisième texte sous le bouton 3*/{
+    display: none; /* Texte caché initialement */
+    max-width: 100%; /* Définir la largeur maximale du texte */
+    margin: 0 auto; /* Centrer le texte horizontalement */
+    margin-left: 0%; /* Appliquer le même décalage que le bouton */
+    text-align: left;
+    margin-top: 3%;
+}
 
+.show-text {
+    display: block; /* Afficher le texte */
+}
+
+.button-container /* premier bouton */ {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu horizontalement */
+    margin-left: 0%; /* Décalage vers la gauche */
+    width: 300px; /* Largeur fixe pour chaque conteneur de boutons */
+}
+.button-container2 /* deuxième bouton */ {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu horizontalement */
+    margin-left: 10%; /* Décalage vers la gauche */
+    width: 300px; /* Largeur fixe pour chaque conteneur de boutons */
+}
+.button-container3 /* troisième bouton */ {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu horizontalement */
+    margin-left: 10%; /* Décalage vers la gauche */
+    width: 300px; /* Largeur fixe pour chaque conteneur de boutons */
+}
+.custom-button /* design du premier bouton */{
+    font-size:150%; /* Augmenter la taille du bouton */
+    padding: 10px 20px; /* Augmenter le rembourrage */
+    align-self: flex-start; /* Aligner le bouton à gauche */
+}
+.custom-button2 /* design du deuxième bouton */{
+    font-size:150%; /* Augmenter la taille du bouton */
+    padding: 10px 20px; /* Augmenter le rembourrage */
+    align-self: flex-start; /* Aligner le bouton à gauche */
+}
+.custom-button3 /* design du troisième bouton */{
+    font-size:150%; /* Augmenter la taille du bouton */
+    padding: 10px 20px; /* Augmenter le rembourrage */
+    align-self: flex-start; /* Aligner le bouton à gauche */
+}
 .button-wrapper {
     display: flex;
-    max-width: 23%;
-    text-align: center;
-}
-
-.button-wrapper button {
-    margin: 0 50% /* Ajoute une marge horizontale entre chaque bouton */
-    
-}
-
-.button-wrapper button:first-child {
-    margin-left: 30%;
-}
-
-/* Retirer la marge à droite du dernier bouton */
-.button-wrapper button:last-child {
-    margin-right: 0;
-}
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Permettre le passage à la ligne si nécessaire */
-}
-
-button {
-    font-size: 150%;
-    padding: 5% 10%; /* Espacement à l'intérieur du bouton */
-}
-
-.hidden {
-    display: none;
-}
-
-.resultat-pourquoi {
-    display: block; /* Afficher le texte */
-    position: absolute; /* Position absolue pour placer le texte par rapport au bouton */
-    top: 43%; /* Décaler le texte vers le bas par rapport au bouton */
-    right: 78%;
-    left: 12%; /* Centrer horizontalement par rapport au bouton */
-    transform: translateX(-50%); /* Décalage supplémentaire pour centrer le texte exactement par rapport au bouton */
-    max-width: 10%;
-    text-align: left; /* Aligner le texte à gauche */
-}
-
-.resultat-solution {
-    display: block; /* Afficher le texte */
-    position: absolute; /* Position absolue pour placer le texte par rapport au bouton */
-    top: 43%; /* Décaler le texte vers le bas par rapport au bouton */
-    left: 45.5%;
-    transform: translateX(-50%); /* Décalage supplémentaire pour centrer le texte exactement par rapport au bouton */
-    max-width: 10%;
-    text-align: left; /* Aligner le texte à gauche */
-}
-
-.resultat-savoir {
-    display: block; /* Afficher le texte */
-    position: absolute; /* Position absolue pour placer le texte par rapport au bouton */
-    top: 43%; /* Décaler le texte vers le bas par rapport au bouton */
-    left: 78.5%; /* Centrer horizontalement par rapport au bouton */
-    transform: translateX(-50%); /* Décalage supplémentaire pour centrer le texte exactement par rapport au bouton */
-    max-width: 10%;
-    text-align: left; /* Aligner le texte à gauche */
-}
-
-.resultat-text {
-    margin: 0 0% /* Ajoute une marge horizontale entre chaque bouton */
+    justify-content: space-around; /* Répartir les boutons équitablement sur la ligne */
 }

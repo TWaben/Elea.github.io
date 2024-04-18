@@ -15,29 +15,24 @@
         <br>
         <br>
         <div class="description">
-        <p style="font-size: 30px;">L'enfant a des difficulté en planification ...</p>
-        </div>
-        <!-- Ajout des boutons -->
+            <p style="font-size: 30px;">L'enfant a des difficulté en planification ...</p>
+            </div>
+        <br>
         <br>
         <div class="button-wrapper">
-            <button class="button" onclick="Pourquoi()">Pourquoi?</button>
-            <button class="button" onclick="Solution()">Solution?</button>
-            <button class="button" onclick="Savoir()">Bon à savoir</button>
+            <div class="button-container">
+                <button class="custom-button" onclick="toggleText('text1')">Pourquoi?</button>
+                <p class="button-text" id="text1">Les difficultés dans les domaines de la communication et des interactions sociales sont l’un des premiers signes cliniques du TSA présent dans le DSM V. Un enfant autiste peut être dans l’incapacité de maintenir une conversation en raison d’une réduction d’intérêts, d’émotions, d’affects et de réponses. L’enfant peut présenter des difficultés dans la compréhension et l’utilisation de la communication verbale ou non verbale.</p>
+            </div>
+            <div class="button-container2">
+                <button class="custom-button2" onclick="toggleText('text2')">Solution</button>
+                <p class="button-text2" id="text2">Dans le cas d’un travail de groupe, l’enseignant peut proposer une tâche bien spécifique à l’enfant afin de cibler son intérêt. Afin de l’investir, le choix d’une tâche en lien avec ses préférences, ses intérêts est essentiel. L’enseignant peut également encourager ses camarades à interagir avec lui.</p>
+            </div>
+            <div class="button-container3">
+                <button class="custom-button3" onclick="toggleText('text3')">Bon à savoir</button>
+                <p class="button-text3" id="text3"> A partir de 3 ans, les enfants sont capables d’interagir avec leurs pairs, ils s’engagent dans le jeu et peuvent coopérer.</p>
+            </div>
         </div>
-
-        <!-- Emplacement pour afficher le résultat -->
-        
-        <div id="resultat" class="resultat-text"></div>
-        <div id="resultat2" class="resultat-text"></div>
-        <div id="resultat3" class="resultat-text"></div>
-        
-        <!-- Image cliquable -->
-        <div id="imageContainer"></div>
-        
-    </div>
-
-    <!-- JavaScript -->
-    <script src="Communication S1.js"></script>
-    
-</body>
-</html>
+        <script src="Communication S1.js"></script>
+    </body>
+    </html>
