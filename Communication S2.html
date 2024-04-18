@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situation 1 : travail de groupe</title>
+    <link rel="stylesheet" href="Communication S2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Définition du style du texte */
+        .button-text {
+            font-size: 20px; /* Taille du texte en pixels */
+        }
+        .button-text2 {
+            font-size: 20px; /* Taille du texte en pixels */
+        }
+        .button-text3 {
+            font-size: 20px; /* Taille du texte en pixels */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="ours4.png" alt="Logo ours">
+        <h1>Situation 2 : ATTENTION CONJOINTE</h1>
+        
+    </div>
+    <div> 
+        <br>
+        <br>
+        <img src="visage.png" alt="Description de l'image">
+        <div class="description">
+            <p style="font-size: 30px;">
+                <strong> Pendant la lecture individuelle d’une histoire illustrée, l’enseignante se place face à Paul pour lire l’histoire avec lui. Elle lui pointe quelques images et tente d’attirer son attention. Cependant, Victor fixe le doigt et ne semble pas comprendre l’initiative de l’enseignante.</p></strong>
+            </div>
+        <br>
+        <br>
+        <div class="button-wrapper">
+            <div class="button-container">
+                <button class="custom-button" onclick="toggleText('text1'); this.style.animation = 'heartBeat 2s'">Pourquoi ?</button>
+                <p class="button-text" id="text1">Dans un premier temps, l’attention conjointe est la capacité de partager avec autrui une attention sur un objet ou un événement. L’utilisation du <strong>regard, du pointage et de verbalisations</strong> sont essentielles afin d’initier, de répondre et de maintenir une interaction. Cependant, un enfant TSA évite le regard des autres et utilise peu le pointage. Dans de nombreux cas, l’enfant fait une dissociation entre le regard et le pointage.</p>
+            </div>
+            <div class="button-container2">
+                <button class="custom-button2" onclick="toggleText('text2'); this.style.animation = 'heartBeat 2s'">Solution</button>
+                <p class="button-text2" id="text2">-	Utiliser des <strong>aides visuelles</strong> (flèches, images) pour attirer son attention. <br><br>
+                    -	Se positionner à sa hauteur et bien en face afin d’augmenter la possibilité de <strong>regarder</strong> le <strong>visage</strong> de l’enseignant. Ne pas disposer des distractions en arrière-plan.</strong> <br><br>
+                    -	Combiner les indices tels que le pointage et la verbalisation.<br><br>
+                    </p>
+            </div>
+            <div class="button-container3">
+                <button class="custom-button3" onclick="toggleText('text3'); this.style.animation = 'heartBeat 2s'">Bon à savoir</button>
+                <p class="button-text3" id="text3"> L’attention conjointe est un prérequis de la communication. <br>
+                    Chez les enfants neurotypiques : <br><br>
+                    -	<strong>À partir de 2 mois</strong>, le sourire social apparaît.<br><br>
+                    -	<strong>À partir de 6 mois</strong>, le bébé est capable de regarder dans la même direction que son partenaire à condition que l’objet soit visible par les deux partenaires.<br><br>
+                    -	<strong>À partir de 9 mois</strong>, l’enfant est capable de répondre à l’attention conjointe.
+                    -	<strong>À partir d’un an</strong>, l'enfant est capable d’initier l'attention en pointant et en s’orientant.  </p>
+            </div>
+        </div>
+        <script src="Communication S1.js"></script>
+        <a href="#" class="back-button" id="backButton">
+            <img src="flèche.png" alt="Logo de retour">
+        </a>
+        <a href="#" class="avance-button" id="avanceButton">
+            <img src="flèche inversé.png" alt="Logo d'avancé'">
+        </a>
+        <script>
+            function toggleText(textId) {
+                var text = document.getElementById(textId);
+                text.classList.toggle('show-text'); // Ajoute ou supprime la classe 'show-text'
+            }
+    
+            document.getElementById("backButton").addEventListener("click", function() {
+                window.location.href = "Communication S1.html"; // Remplacez "votre_page.html" par l'URL de la page à laquelle vous souhaitez revenir
+            });
+            document.getElementById("avanceButton").addEventListener("click", function() {
+                window.location.href = "index.html"; // Remplacez "votre_page.html" par l'URL de la page à laquelle vous souhaitez revenir
+            });
+        </script>
+
+</body>
+</html>

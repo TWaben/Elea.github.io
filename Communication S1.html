@@ -22,7 +22,7 @@
 <body>
     <div class="container">
         <img src="ours4.png" alt="Logo ours">
-        <h1>Situation 1 : Travail de groupe</h1>
+        <h1>Situation 1 : INTERACTION ENTRE PAIRS</h1>
         
     </div>
     <div> 
@@ -30,7 +30,8 @@
         <br>
         <img src="Design sans titre4.png" alt="Description de l'image">
         <div class="description">
-            <p style="font-size: 30px;">Pendant d’une activité en classe, les enfants sont répartis en petits groupes afin de réaliser l’activité. Victor semble en retrait, n’interagit pas avec son groupe et manifeste peu d’intérêt pour l’activité proposée.</p>
+            <p style="font-size: 30px;">
+                <strong> Pendant une activité en classe, les enfants sont répartis en petits groupes afin de réaliser l’activité. Victor semble en retrait, n’interagit pas avec son groupe et manifeste peu d’intérêt pour l’activité proposée.</p></strong>
             </div>
         <br>
         <br>
@@ -41,20 +42,23 @@
             </div>
             <div class="button-container2">
                 <button class="custom-button2" onclick="toggleText('text2'); this.style.animation = 'heartBeat 2s'">Solution</button>
-                <p class="button-text2" id="text2">-	Proposer une tâche spécifique à l’enfant afin de cibler son intérêt. <br>
-                    -	Choisir une tâche en lien avec ses préférences, ses intérêts. <br>
-                    -	Utiliser des supports visuels (pictogrammes, images) pour anticiper l’activité de groupe.<br>
-                    -	Encourager ses camarades à interagir avec lui et à être compréhensifs.
+                <p class="button-text2" id="text2">-	Proposer une <strong>Tâche spécifique</strong> à l’enfant afin de cibler son intérêt. <br><br>
+                    -	Choisir une tâche en lien avec ses<strong> préférences, ses intérêts.</strong> <br><br>
+                    -	Utiliser des <strong>support visuels</strong> (pictogrammes, images) pour anticiper l’activité de groupe.<br><br>
+                    -	<strong>Encourager</strong> ses camarades à interagir avec lui et à être compréhensifs.
                     </p>
             </div>
             <div class="button-container3">
                 <button class="custom-button3" onclick="toggleText('text3'); this.style.animation = 'heartBeat 2s'">Bon à savoir</button>
-                <p class="button-text3" id="text3"> À partir de 2 ans, les enfants sont capables d’échanger, de prendre contact et de maintenir ce contact avec leurs pairs. Ils s’engagent dans le jeu symbolique et dans l’imitation de gestes et d’attitudes d’autrui. </p>
+                <p class="button-text3" id="text3"> <strong>À partir de 2 ans</strong>, les enfants sont capables d’échanger, de prendre contact et de maintenir ce contact avec leurs pairs. Ils s’engagent dans le jeu symbolique et dans l’imitation de gestes et d’attitudes d’autrui. </p>
             </div>
         </div>
         <script src="Communication S1.js"></script>
         <a href="#" class="back-button" id="backButton">
             <img src="flèche.png" alt="Logo de retour">
+        </a>
+        <a href="#" class="avance-button" id="avanceButton">
+            <img src="flèche inversé.png" alt="Logo d'avancé'">
         </a>
         <script>
             function toggleText(textId) {
@@ -64,6 +68,9 @@
     
             document.getElementById("backButton").addEventListener("click", function() {
                 window.location.href = "index.html"; // Remplacez "votre_page.html" par l'URL de la page à laquelle vous souhaitez revenir
+            });
+            document.getElementById("avanceButton").addEventListener("click", function() {
+                window.location.href = "Communication S2.html"; // Remplacez "votre_page.html" par l'URL de la page à laquelle vous souhaitez revenir
             });
         </script>
 
