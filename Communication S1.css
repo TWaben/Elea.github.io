@@ -45,7 +45,7 @@ body {
     display: none; /* Texte caché initialement */
     max-width: 100%; /* Définir la largeur maximale du texte */
     margin: 0 auto; /* Centrer le texte horizontalement */
-    margin-left: -27%; /* Appliquer le même décalage que le bouton */
+    margin-left: -8%; /* Appliquer le même décalage que le bouton */
     text-align: center;
     margin-top: 3%;
 }
