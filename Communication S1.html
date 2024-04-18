@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Situation 1 : travail de groupe</title>
     <link rel="stylesheet" href="Communication S1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         /* Définition du style du texte */
         .button-text {
@@ -21,7 +22,6 @@
 <body>
     <div class="container">
         <h1>Situation 1 : Travail de groupe</h1>
-        
     </div>
     <div> 
         <br>
@@ -34,18 +34,32 @@
         <br>
         <div class="button-wrapper">
             <div class="button-container">
-                <button class="custom-button" onclick="toggleText('text1')">Pourquoi ?</button>
+                <button class="custom-button" onclick="toggleText('text1'); this.style.animation = 'heartBeat 2s'">Pourquoi ?</button>
                 <p class="button-text" id="text1">Les difficultés dans les domaines de la communication et des interactions sociales sont l’un des premiers signes cliniques du TSA présent dans le DSM V. Un enfant autiste peut être dans l’incapacité de maintenir une conversation en raison d’une réduction d’intérêts, d’émotions, d’affects et de réponses. L’enfant peut présenter des difficultés dans la compréhension et l’utilisation de la communication verbale ou non verbale.</p>
             </div>
             <div class="button-container2">
-                <button class="custom-button2" onclick="toggleText('text2')">Solution</button>
+                <button class="custom-button2" onclick="toggleText('text2'); this.style.animation = 'heartBeat 2s'">Solution</button>
                 <p class="button-text2" id="text2">Dans le cas d’un travail de groupe, l’enseignant peut proposer une tâche bien spécifique à l’enfant afin de cibler son intérêt. Afin de l’investir, le choix d’une tâche en lien avec ses préférences, ses intérêts est essentiel. L’enseignant peut également encourager ses camarades à interagir avec lui.</p>
             </div>
             <div class="button-container3">
-                <button class="custom-button3" onclick="toggleText('text3')">Bon à savoir</button>
+                <button class="custom-button3" onclick="toggleText('text3'); this.style.animation = 'heartBeat 2s'">Bon à savoir</button>
                 <p class="button-text3" id="text3"> A partir de 3 ans, les enfants sont capables d’interagir avec leurs pairs, ils s’engagent dans le jeu et peuvent coopérer.</p>
             </div>
         </div>
         <script src="Communication S1.js"></script>
-    </body>
-    </html>
+        <a href="#" class="back-button" id="backButton">
+            <img src="flèche.png" alt="Logo de retour">
+        </a>
+        <script>
+            function toggleText(textId) {
+                var text = document.getElementById(textId);
+                text.classList.toggle('show-text'); // Ajoute ou supprime la classe 'show-text'
+            }
+    
+            document.getElementById("backButton").addEventListener("click", function() {
+                window.location.href = "index.html"; // Remplacez "votre_page.html" par l'URL de la page à laquelle vous souhaitez revenir
+            });
+        </script>
+
+</body>
+</html>
