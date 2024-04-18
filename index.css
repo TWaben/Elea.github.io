@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #d9ccb3; /* Définir la couleur de fond en beige */
+    font-family: "Times New Roman", Times, serif; /* Votre police préférée */
 }
 
 .header {
@@ -10,6 +11,7 @@ body {
     justify-content: center;
     padding: 20px; /* Ajout de rembourrage pour l'espace autour du contenu */
     background-color: #e4c281;
+    border-bottom: 2px solid black; /* Ajout d'une bordure noire en bas de l'en-tête */
 }
 
 .container {
@@ -18,7 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10%; /* Ajout de rembourrage pour l'espace autour du contenu */
+    padding: 5%; /* Ajout de rembourrage pour l'espace autour du contenu */
 }
 
 nav ul {
