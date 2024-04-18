@@ -27,7 +27,7 @@ body {
 }
 
 .button-wrapper button:first-child {
-    margin-left: 50%;
+    margin-left: 30%;
 }
 
 /* Retirer la marge à droite du dernier bouton */
@@ -39,7 +39,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; /* Permettre le passage à la ligne si nécessaire */
-    margin: 0 auto; /* Centrer horizontalement */
 }
 
 button {
@@ -49,4 +48,39 @@ button {
 
 .hidden {
     display: none;
+}
+
+.resultat-pourquoi {
+    display: block; /* Afficher le texte */
+    position: absolute; /* Position absolue pour placer le texte par rapport au bouton */
+    top: 43%; /* Décaler le texte vers le bas par rapport au bouton */
+    right: 78%;
+    left: 12%; /* Centrer horizontalement par rapport au bouton */
+    transform: translateX(-50%); /* Décalage supplémentaire pour centrer le texte exactement par rapport au bouton */
+    max-width: 10%;
+    text-align: left; /* Aligner le texte à gauche */
+}
+
+.resultat-solution {
+    display: block; /* Afficher le texte */
+    position: absolute; /* Position absolue pour placer le texte par rapport au bouton */
+    top: 43%; /* Décaler le texte vers le bas par rapport au bouton */
+    left: 45.5%;
+    transform: translateX(-50%); /* Décalage supplémentaire pour centrer le texte exactement par rapport au bouton */
+    max-width: 10%;
+    text-align: left; /* Aligner le texte à gauche */
+}
+
+.resultat-savoir {
+    display: block; /* Afficher le texte */
+    position: absolute; /* Position absolue pour placer le texte par rapport au bouton */
+    top: 43%; /* Décaler le texte vers le bas par rapport au bouton */
+    left: 78.5%; /* Centrer horizontalement par rapport au bouton */
+    transform: translateX(-50%); /* Décalage supplémentaire pour centrer le texte exactement par rapport au bouton */
+    max-width: 10%;
+    text-align: left; /* Aligner le texte à gauche */
+}
+
+.resultat-text {
+    margin: 0 0% /* Ajoute une marge horizontale entre chaque bouton */
 }
