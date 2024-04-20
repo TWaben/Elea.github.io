@@ -1,0 +1,138 @@
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+    14% {
+        transform: scale(1.3);
+    }
+    28% {
+        transform: scale(1);
+    }
+    42% {
+        transform: scale(1.3);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d9ccb3; /* Définir la couleur de fond en beige */
+    text-align: center;
+    font-family: "Times New Roman", Times, serif; /* Votre police préférée */
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1%; /* Ajout de rembourrage pour l'espace autour du contenu */
+    background-color: #d191d1;
+    border-bottom: 2px solid black; /* Ajout d'une bordure noire en bas de l'en-tête */
+    
+}
+.button-text /* premier texte sous le bouton */{
+    display: none; /* Texte caché initialement */
+    max-width: 100%; /* Définir la largeur maximale du texte */
+    margin: 0 auto; /* Centrer le texte horizontalement */
+    margin-left: -20%; /* Appliquer le même décalage que le bouton */
+    text-align: center;
+    margin-top: 3%;
+}
+.button-text2 /* deuxième texte sous le bouton 2 */{
+    display: none; /* Texte caché initialement */
+    max-width: 100%; /* Définir la largeur maximale du texte */
+    margin: 0 auto; /* Centrer le texte horizontalement */
+    margin-left: -8%; /* Appliquer le même décalage que le bouton */
+    text-align: center;
+    margin-top: 3%;
+}
+.button-text3 /* troisième texte sous le bouton 3*/{
+    display: none; /* Texte caché initialement */
+    max-width: 100%; /* Définir la largeur maximale du texte */
+    margin: 0 auto; /* Centrer le texte horizontalement */
+    margin-left: -20%; /* Appliquer le même décalage que le bouton */
+    text-align: center;
+    margin-top: 3%;
+    animation:animate__swing;
+}
+
+.show-text {
+    display: block; /* Afficher le texte */
+}
+
+.button-container /* premier bouton */ {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu horizontalement */
+    margin-left: 10%; /* Décalage vers la gauche */
+    width: 300px; /* Largeur fixe pour chaque conteneur de boutons */
+}
+.button-container2 /* deuxième bouton */ {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu horizontalement */
+    margin-left: 10%; /* Décalage vers la gauche */
+    width: 300px; /* Largeur fixe pour chaque conteneur de boutons */
+}
+.button-container3 /* troisième bouton */ {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu horizontalement */
+    margin-left: 10%; /* Décalage vers la gauche */
+    width: 300px; /* Largeur fixe pour chaque conteneur de boutons */
+}
+.custom-button /* design du premier bouton */{
+    font-size:150%; /* Augmenter la taille du bouton */
+    padding: 10px 20px; /* Augmenter le rembourrage */
+    align-self: flex-start; /* Aligner le bouton à gauche */
+    border-radius: 200px;
+    font-weight: bold; /* Mettre le texte en gras */
+    background-color: #dab4da;
+}
+.custom-button2 /* design du deuxième bouton */{
+    font-size:150%; /* Augmenter la taille du bouton */
+    padding: 10px 20px; /* Augmenter le rembourrage */
+    align-self: flex-start; /* Aligner le bouton à gauche */
+    border-radius: 200px;
+    font-weight: bold; /* Mettre le texte en gras */
+    background-color: #dab4da;
+}
+.custom-button3 /* design du troisième bouton */{
+    font-size:150%; /* Augmenter la taille du bouton */
+    padding: 10px 20px; /* Augmenter le rembourrage */
+    align-self: flex-start; /* Aligner le bouton à gauche */
+    border-radius: 200px;
+    font-weight: bold; /* Mettre le texte en gras */
+    background-color: #dab4da;
+}
+.button-wrapper {
+    display: flex;
+    justify-content: space-around; /* Répartir les boutons équitablement sur la ligne */
+}
+.back-button {
+    position: fixed; /* Position fixe pour rester en haut à gauche même en faisant défiler */
+    top: 20px; /* Distance par rapport au haut */
+    left: 20px; /* Distance par rapport à gauche */
+    z-index: 9999; /* Pour s'assurer que le bouton est au-dessus de tout le contenu */
+}
+
+/* Styles pour le logo du bouton */
+.back-button img {
+    width: 60px; /* Taille de votre logo */
+    height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
+    border: none; /* Supprimer les bordures */
+}
+.avance-button  {
+    position: fixed; /* Position fixe pour rester en haut à gauche même en faisant défiler */
+    top: 20px; /* Distance par rapport au haut */
+    right: 20px; /* Distance par rapport à gauche */
+    z-index: 9999; /* Pour s'assurer que le bouton est au-dessus de tout le contenu */
+}
+.avance-button img {
+    width: 60px; /* Taille de votre logo */
+    height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
+    border: none; /* Supprimer les bordures */
+}
