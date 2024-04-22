@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 1%; /* Ajout de rembourrage pour l'espace autour du contenu */
-    background-color: #d191d1;
+    background-color: #91c591;
     border-bottom: 2px solid black; /* Ajout d'une bordure noire en bas de l'en-tête */
     
 }
@@ -90,7 +90,7 @@ body {
     align-self: flex-start; /* Aligner le bouton à gauche */
     border-radius: 200px;
     font-weight: bold; /* Mettre le texte en gras */
-    background-color: #dab4da;
+    background-color: #a2c9a2;
 }
 .custom-button2 /* design du deuxième bouton */{
     font-size:150%; /* Augmenter la taille du bouton */
@@ -98,7 +98,7 @@ body {
     align-self: flex-start; /* Aligner le bouton à gauche */
     border-radius: 200px;
     font-weight: bold; /* Mettre le texte en gras */
-    background-color: #dab4da;
+    background-color: #a2c9a2;
 }
 .custom-button3 /* design du troisième bouton */{
     font-size:150%; /* Augmenter la taille du bouton */
@@ -106,7 +106,7 @@ body {
     align-self: flex-start; /* Aligner le bouton à gauche */
     border-radius: 200px;
     font-weight: bold; /* Mettre le texte en gras */
-    background-color: #dab4da;
+    background-color: #a2c9a2;
 }
 .button-wrapper {
     display: flex;
@@ -136,4 +136,3 @@ body {
     height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
     border: none; /* Supprimer les bordures */
 }
-
